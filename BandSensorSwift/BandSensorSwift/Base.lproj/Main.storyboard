@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="BandSensorSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="Microsoft Band!!!" translatesAutoresizingMaskIntoConstraints="NO" id="mte-Vw-FW2">
+                                <rect key="frame" x="20" y="112" width="560" height="383"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sEm-wn-EOI">
+                                <rect key="frame" x="16" y="28" width="568" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="RUN">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startTesting:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="KDD-A8-KrN"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Accel Data" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v71-fe-lpc">
+                                <rect key="frame" x="16" y="77" width="568" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Wd8-vH-ifR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="FUCK THIS SHIT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dXC-ym-Mv1">
+                                <rect key="frame" x="16" y="503" width="568" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="XaB-gd-4Oh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="v71-fe-lpc" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="FeL-lb-VFj"/>
+                            <constraint firstItem="v71-fe-lpc" firstAttribute="leading" secondItem="sEm-wn-EOI" secondAttribute="leading" id="FsI-If-y7E"/>
+                            <constraint firstItem="mte-Vw-FW2" firstAttribute="top" secondItem="v71-fe-lpc" secondAttribute="bottom" constant="14" id="GSe-S4-Tbg"/>
+                            <constraint firstItem="dXC-ym-Mv1" firstAttribute="trailing" secondItem="v71-fe-lpc" secondAttribute="trailing" id="LAs-jA-AXn"/>
+                            <constraint firstItem="dXC-ym-Mv1" firstAttribute="top" secondItem="mte-Vw-FW2" secondAttribute="bottom" constant="8" symbolic="YES" id="VmL-HJ-KIn"/>
+                            <constraint firstItem="v71-fe-lpc" firstAttribute="leading" secondItem="mte-Vw-FW2" secondAttribute="leading" constant="-4" id="XaX-p2-emn"/>
+                            <constraint firstItem="sEm-wn-EOI" firstAttribute="trailing" secondItem="v71-fe-lpc" secondAttribute="trailing" id="aAl-gu-VLj"/>
+                            <constraint firstItem="sEm-wn-EOI" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" symbolic="YES" id="bZw-uA-vke"/>
+                            <constraint firstItem="v71-fe-lpc" firstAttribute="top" secondItem="sEm-wn-EOI" secondAttribute="bottom" constant="19" id="duf-jU-nqF"/>
+                            <constraint firstItem="dXC-ym-Mv1" firstAttribute="leading" secondItem="v71-fe-lpc" secondAttribute="leading" id="fQY-6U-JYz"/>
+                            <constraint firstAttribute="bottom" secondItem="mte-Vw-FW2" secondAttribute="bottom" constant="105" id="fTl-dP-tah"/>
+                            <constraint firstItem="v71-fe-lpc" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="ny2-qP-tQ4"/>
+                            <constraint firstItem="mte-Vw-FW2" firstAttribute="trailing" secondItem="v71-fe-lpc" secondAttribute="trailing" constant="-4" id="uqX-p4-95a"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="accelLabel" destination="v71-fe-lpc" id="cm4-Bm-zhd"/>
+                        <outlet property="debugPrintShit" destination="dXC-ym-Mv1" id="WZQ-i1-OAp"/>
+                        <outlet property="txtOutput" destination="mte-Vw-FW2" id="P7j-T7-zxK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="322"/>
+        </scene>
+    </scenes>
+</document>
